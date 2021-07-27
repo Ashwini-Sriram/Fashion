@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>HTML5 Local Storage Project</title>
+  <style>
+    body {
+      background-image: url("https://images.unsplash.com/photo-1523194258983-4ef0203f0c47?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80");
+
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0px;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="rating" content="General" />
+  <meta name="expires" content="never" />
+  <meta name="language" content="English, EN" />
+  <meta name="description" content="Shopping cart project with HTML5 and JavaScript" />
+  <meta name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage" />
+  <meta name="author" content="dcwebmakers.com" />
+  <script src="Storage.js"></script>
+  <link rel="stylesheet" href="StorageStyle.css" />
+</head>
+
+<body>
+  <div style="background:black">
+    <nav style:"text-align: "center" ;">
+      <div>
+        <div>
+          <ul>
+            <li><a href="home.html" style="font-size:30px; color:white;">Home</a></li>
+            <li> <a href="about.html" style="font-size:30px; color:white;">About Us</a></li>
+
+
+            <li><a href="lion1.html" style="font-size:30px; color:white;">Our collections</a></li>
+            <li><a href="login.html" style="font-size:30px; color:white;">Login</a></li>
+
+            <li><a href="orders.html" style="font-size:30px; color:white;">Cart</a></li>
+            <ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <div id="items_table">
+    <h2><b>Shopping List</b></h2>
+    <table id="list"></table>
+
+  </div>
+
+
+
+  <form action="insert2.php" name="ShoppingList" method="POST">
+    <fieldset>
+      <legend>Shopping cart</legend>
+      <label>Item: <span style="color: blanchedalmond;">1. Off Shoulder top</span></label>
+
+      <label style=" padding-left : 30px;"> Quantity: <input type="number" name="data"></label>
+
+
+
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">2. Black tank tee</span></label>
+
+      <label style=" padding-left : 46px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">3. Denim Coat </span></label>
+
+      <label style=" padding-left : 65px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">4. Beige-lenin coat</span></label>
+
+      <label style=" padding-left : 33px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">5. Full sleved sweater</span></label>
+
+      <label style=" padding-left : 11px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">6. White tee</span></label>
+
+      <label style=" padding-left : 82px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">7. fit ripped jeans</span></label>
+
+      <label style=" padding-left : 40px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">8. High waist flares</span></label>
+
+      <label style=" padding-left : 28px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <fieldset>
+
+      <label>Item: <span style="color: blanchedalmond;">9. New arrival</span></label>
+
+      <label style=" padding-left : 66px;"> Quantity: <input type="number" name="data"></label>
+    </fieldset>
+    <div style="margin-top: 40px;">
+      <a href="payment.html"><input type="button" value="Save" onclick="SaveItem()"></a>
+
+      <a href="orders.html"><input type="button" value="Delete" onclick="RemoveItem()"></a>
+
+    </div>
+
+
+  </form>
+</body>
+
+</html>
